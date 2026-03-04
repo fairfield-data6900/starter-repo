@@ -1,0 +1,20 @@
+{
+  "name": "SDD Course Environment",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
+      ],
+      "settings": {
+        "editor.fontSize": 14,
+        "editor.wordWrap": "on"
+      }
+    }
+  },
+  "postCreateCommand": "echo 'Welcome to SDD Course! Your environment is ready.'"
+}
