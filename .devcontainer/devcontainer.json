@@ -1,6 +1,6 @@
 {
   "name": "SDD Course Environment",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
@@ -16,5 +16,5 @@
       }
     }
   },
-  "postCreateCommand": "echo 'Welcome to SDD Course! Your environment is ready.'"
+  "postCreateCommand": "pip install streamlit pytest python-dotenv && echo 'Welcome to SDD Course! Your environment is ready.'"
 }
